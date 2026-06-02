@@ -17,7 +17,7 @@ public class Customer {
 
     @NotBlank(message = "Customer email is required")
     @Email(message = "Email should be a valid email format")
-    @Column(unique = true, nullable = false, index = true)
+    @Column(unique = true, nullable = false)
     private String email;
 
     @Column
